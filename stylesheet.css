@@ -3,43 +3,52 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     /* background-color: lime; */
-    background-color:  #f0dc29;
+    background-color:  #c2c1b6;
+    /* background-image: url(clouds.jpg); */
 }
 h1 , h2{
     text-decoration: underline;
+    text-align: center;
 }
-
-p.para1{
-    color: blue;
-    font-size: 25px;
-    line-height: 1.5em;
-    
- }
-p.para2 {
-    color: purple;
-    font-size: 25px;
+span {
+    background-color: yellow;
+}
+p.paragraph {
+    color: black;
+    font-size: 15px;
     line-height: 1.5em;
     background-color: white;
     padding: 10px;
     border: black 2px solid;
+    border-radius: 25px;
+    background-image: url(clouds.jpg);
       
  }
 
- p.para4 {
-    color: black;
-    font-size: 25px;
+ #para4Homepage {
+    color: blue;
+    font-size: 15px;
     line-height: 1.5em;
     background-color: white;
     padding: 10px;
     border: black 2px solid;
+    border-radius: 25px;
     margin: 20px;
     margin-left: 400px;
+   
+ }
 p.para3 {
     color: purple;
-    font-size: 25px;
+    font-size: 15px;
     font-style: italic;
     
  }
  i {
      color: red;
+ }
+ .imagec {
+ height: 238px;
+ width: 500px;
+ border: 1px black solid;
+ margin-left: 400px;
  }
