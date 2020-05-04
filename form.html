@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Normal form
-        </title>
-        <link rel="stylesheet" type="text/css" href="stylesheet2.css">
-    </head>
-    <body>
-        <h1>Fill out the form bellow informations to place the order</h1>
-            <p>
-                <form action="" method="" id="theform">
-                <div class="row">
-                    <label for="name">Name:</label>
-                    <input type="text" name="" id="name"><br><br>
-                </div>
-                <div class="row"> 
-                    <label for="address">Address:</label>
-                    <input type="text" name="" id="address"><br><br>
-                </div>
-                <div class="row">
-                    <label for="phone">Phone No.:</label>
-                    <input type="tel" name="" id="phone"><br><br>
-                </div>
-                <div class="row">
-                    <label for="email">Email id:</label>
-                    <input type="email"name="" id="email">
-                </div>
-                
-            </p>
-        
-       </form>
 
-        
-    </body>
+<head>
+    <title>
+        Normal form
+    </title>
+    <link rel="stylesheet" type="text/css" href="stylesheet2.css">
+    <script>
+        function formValidation() {
+            //alert ("Hi");
+            var name = document.theform.name.value;
+            var address = document.theform.address.value;
+            var email = document.theform.email.value;
+            var phone = document.theform.phone.value;
+            if (name == "") {
+                alert("Name is required");
+            }
+            else if (address == "") {
+                alert("address is required");
+            }
+            else if (phone == "") {
+                alert("phone is required");
+            }
+            else if (email == "") {
+                alert("email is required");
+            }
+            else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) == false) {
+
+                alert("You have entered an invalid email address!");
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Fill out the form bellow informations to place the order</h1>
+    <p>
+        <form action="" method="" name="theform" id="theform">
+            <div class="row">
+                <label for="name">Name:</label>
+                <input type="text" name="" id="name" value=""><br><br>
+            </div>
+            <div class="row">
+                <label for="address">Address:</label>
+                <input type="text" name="" id="address" value=""><br><br>
+            </div>
+            <div class="row">
+                <label for="phone">Phone No.:</label>
+                <input type="tel" name="" id="phone" value=""><br><br>
+            </div>
+            <div class="row">
+                <label for="email">Email id:</label>
+                <input type="email" name="" id="email" value=""><br><br>
+            </div>
+            <div class="row">
+                <input type="button" name="" id="submit" value="SUBMIT" onclick="formValidation();">
+            </div>
+
+    </p>
+
+    </form>
+
+
+</body>
+
 </html>
